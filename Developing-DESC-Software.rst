@@ -2,49 +2,6 @@
 LSST Dark Energy Science Collaboration : Developing DESC Software
 =================================================================
 
-.. raw:: html
-
-   <div id="page">
-
-.. raw:: html
-
-   <div id="main" class="aui-page-panel">
-
-.. raw:: html
-
-   <div id="main-header">
-
-.. raw:: html
-
-   <div id="breadcrumb-section">
-
-#. `LSST Dark Energy Science Collaboration <index.html>`__
-
-.. raw:: html
-
-   </div>
-
-.. rubric::  LSST Dark Energy Science Collaboration : Developing DESC
-   Software
-   :name: title-heading
-   :class: pagetitle
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div id="content" class="view">
-
-.. raw:: html
-
-   <div class="page-metadata">
-
-
-.. raw:: html
-
-   </div>
 
 .. raw:: html
 
