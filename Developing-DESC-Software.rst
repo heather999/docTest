@@ -41,7 +41,6 @@ LSST Dark Energy Science Collaboration : Developing DESC Software
 
    <div class="page-metadata">
 
-Created by James Chiang, last modified by Phil Marshall on Mar 08, 2016
 
 .. raw:: html
 
