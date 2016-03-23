@@ -11,7 +11,7 @@ LSST Dark Energy Science Collaboration : Developing DESC Software
 
    <div class="toc-macro rbtoc1458588141638">
 
--  `Using Git and GitHub <#DevelopingDESCSoftware-UsingGitandGitHub>`__
+-  :ref:`Using-Git-and-GitHub`
 -  `Designing a Project: Repository
    Organization <#DevelopingDESCSoftware-DesigningaProject:RepositoryOrganization>`__
 -  `Development Tools <#DevelopingDESCSoftware-DevelopmentTools>`__
@@ -52,8 +52,9 @@ can view his slides
 here <https://confluence.slac.stanford.edu/download/attachments/206768025/CollabCoding_tutorial.pdf?version=1&modificationDate=1457468188000&api=v2>`__,
 and the video should be on youtube shortly.
 
-.. rubric:: Using Git and GitHub
-   :name: DevelopingDESCSoftware-UsingGitandGitHub
+.. _Using-Git-and-GitHub:
+Using Git and GitHub
+=====================
 
 All code should be in \ `DESC
 GitHub <https://github.com/DarkEnergyScienceCollaboration>`__ repositories.
