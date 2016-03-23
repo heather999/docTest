@@ -1,81 +1,9 @@
 =================================================================
 LSST Dark Energy Science Collaboration : Developing DESC Software
 =================================================================
+.. contents::
+   :depth: 4
 
-.. raw:: html
-
-   <div id="page">
-
-.. raw:: html
-
-   <div id="main" class="aui-page-panel">
-
-.. raw:: html
-
-   <div id="main-header">
-
-.. raw:: html
-
-   <div id="breadcrumb-section">
-
-#. `LSST Dark Energy Science Collaboration <index.html>`__
-
-.. raw:: html
-
-   </div>
-
-.. rubric::  LSST Dark Energy Science Collaboration : Developing DESC
-   Software
-   :name: title-heading
-   :class: pagetitle
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div id="content" class="view">
-
-.. raw:: html
-
-   <div class="page-metadata">
-
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div id="main-content" class="wiki-content group">
-
-.. raw:: html
-
-   <div class="toc-macro rbtoc1458588141638">
-
--  `Using Git and GitHub <#DevelopingDESCSoftware-UsingGitandGitHub>`__
--  `Designing a Project: Repository
-   Organization <#DevelopingDESCSoftware-DesigningaProject:RepositoryOrganization>`__
--  `Development Tools <#DevelopingDESCSoftware-DevelopmentTools>`__
--  `Coding Style
-   Guidelines <#DevelopingDESCSoftware-CodingStyleGuidelines>`__
--  `Code Review <#DevelopingDESCSoftware-CodeReview>`__
--  `Development
-   Workflows <#DevelopingDESCSoftware-DevelopmentWorkflows>`__
-
-   -  `Steps for GitHub
-      flow: <#DevelopingDESCSoftware-StepsforGitHubflow:>`__
-
--  `Automated Testing <#DevelopingDESCSoftware-AutomatedTesting>`__
-
-   -  `Unit Tests <#DevelopingDESCSoftware-UnitTests>`__
-   -  `Continuous Integration
-      Tools <#DevelopingDESCSoftware-ContinuousIntegrationTools>`__
-
-.. raw:: html
-
-   </div>
 
 Welcome! This page contains a growing set of guidelines for people
 involved in the development of DESC software, which is to say, all of
@@ -95,8 +23,10 @@ can view his slides
 here <https://confluence.slac.stanford.edu/download/attachments/206768025/CollabCoding_tutorial.pdf?version=1&modificationDate=1457468188000&api=v2>`__,
 and the video should be on youtube shortly.
 
-.. rubric:: Using Git and GitHub
-   :name: DevelopingDESCSoftware-UsingGitandGitHub
+.. _DevelopingDESCSoftware-Using-Git-and-GitHub:
+
+Using Git and GitHub
+=====================
 
 All code should be in \ `DESC
 GitHub <https://github.com/DarkEnergyScienceCollaboration>`__ repositories.
@@ -112,8 +42,10 @@ practices <http://developer.lsst.io/en/latest/tools/git_setup.html>`__.
  `The Pro Git book <http://git-scm.com/book/en/v2>`__ is good
 introduction to git.
 
-.. rubric:: Designing a Project: Repository Organization
-   :name: DevelopingDESCSoftware-DesigningaProject:RepositoryOrganization
+.. _DevelopingDESCSoftware-Desiging-a-Project:-Repository-Organization
+
+Designing a Project: Repository Organization
+============================================
 
 Since DESC will be working a lot with LSST Stack code, it make sense
 to adopt a repository organization that emulates the DM team
@@ -206,8 +138,10 @@ This repository structure has several notable features:
    system <https://github.com/RobertLuptonTheGood/eups/>`__ that the DM
    team uses.
 
-.. rubric:: Development Tools
-   :name: DevelopingDESCSoftware-DevelopmentTools
+.. _DevelopingDESCSoftware-Development-Tools
+
+Development Tools
+=================
 
 -  `Linters <https://en.wikipedia.org/wiki/Lint_(software)>`__ and other
    `static code analysis
@@ -232,8 +166,10 @@ This repository structure has several notable features:
    `cookiecutter <http://cookiecutter.readthedocs.org/en/latest/>`__)
    for creating new software projects.
 
-.. rubric:: Coding Style Guidelines
-   :name: DevelopingDESCSoftware-CodingStyleGuidelines
+.. _DevelopingDESCSoftware-CodingStyleGuidelines
+
+Coding Style Guidelines
+=======================
 
 These are specific guidelines for how code should be written.
 It includes such things as naming conventions for classes, functions,
@@ -259,8 +195,10 @@ Some benefits of having a standard coding style:
    adopting a software group's established coding style is a social
    norm.
 
-.. rubric:: Code Review
-   :name: DevelopingDESCSoftware-CodeReview
+.. _DevelopingDESCSoftware-CodeReview
+
+Code Review
+===========
 
 -  The aim of code reviews is to have reliable, efficient, maintainable,
    and well-documented code.
@@ -289,8 +227,10 @@ Some benefits of having a standard coding style:
 -  The DM team has `a helpful description of their code review
    process <http://developer.lsst.io/en/latest/processes/workflow.html#review-preparation>`__.
 
-.. rubric:: Development Workflows
-   :name: DevelopingDESCSoftware-DevelopmentWorkflows
+.. _DevelopingDESCSoftware-DevelopmentWorkflows
+   
+Development Workflows
+=====================
 
 A standard workflow such as \ `GitHub
 flow <https://guides.github.com/introduction/flow/>`__ enables multiple
@@ -298,8 +238,10 @@ developers to work on the same package while minimizing conflicts that
 can arise from concurrent development. Having a standard workflow also
 gives clear guidance to new developers on how to contribute.
 
-.. rubric:: Steps for GitHub flow:
-   :name: DevelopingDESCSoftware-StepsforGitHubflow:
+.. _DevelopingDESCSoftware-StepsforGitHubflow:
+
+Steps for GitHub flow
+=====================
 
 -  Create a branch off of master. Master should always be deployable
    (i.e., not broken), so development should occur only on branches.
@@ -322,8 +264,11 @@ gives clear guidance to new developers on how to contribute.
 -  Once all the tests pass and the reviewer is satisfied, merge
    into master.
 
-.. rubric:: Automated Testing
-   :name: DevelopingDESCSoftware-AutomatedTesting
+
+.. _DevelopingDESCSoftware-AutomatedTesting
+
+Automated Testing
+=================
 
 Continuous testing is a key means of maintaining software
 quality. Running tests regularly can significantly reduce development
@@ -333,8 +278,10 @@ addition, comprehensive tests allow for aggressive
 is an important part of agile development for producing high quality
 code.
 
-.. rubric:: Unit Tests
-   :name: DevelopingDESCSoftware-UnitTests
+.. _DevelopingDESCSoftware-UnitTests
+
+Unit Tests
+----------
 
 Testing can occur at several levels: system testing,
 integration testing, and unit testing. Unit tests are the most granular
@@ -367,8 +314,10 @@ the \ `DM team's unit test
 policy <http://developer.lsst.io/en/latest/coding/unit_test_policy.html>`__ is
 also worth looking at.
 
-.. rubric:: Continuous Integration Tools
-   :name: DevelopingDESCSoftware-ContinuousIntegrationTools
+.. _DevelopingDESCSoftware-ContinuousIntegrationTools
+
+Continuous Integration Tools
+----------------------------
 
 Several tools are available for implementing automated testing.  Jenkins
 and Travis CI are available for use by DESC:
@@ -383,49 +332,3 @@ and Travis CI are available for use by DESC:
    that can be easily connected to and configured for a GitHub repo.
    It's a free service for public repositories, and is great for
    projects that don't have a lot of dependencies.
-
- 
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <div id="footer" role="contentinfo">
-
-.. raw:: html
-
-   <div class="section footer-body">
-
-Document generated by Confluence on Mar 21, 2016 15:22
-
-.. raw:: html
-
-   <div id="footer-logo">
-
-`Atlassian <http://www.atlassian.com/>`__
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
